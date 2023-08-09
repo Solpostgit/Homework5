@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
 
         task1 ();
-        task2 ();/*
-        task3 ();
+        task2 ();
+        task3 ();/*
         task4 ();
         task5 (); */
     }
@@ -37,6 +37,16 @@ public class Main {
         }
         else
             System.out.println("Используйте телефон с iOS или Android");
+        System.out.println();
+    }
+    public static void task3 () {
+        System.out.println("task 3");
+        int year = 2021;
+        Boolean leapYear = year % 4 == 0; // Если деление на 4 без остатка, то год високосный
+        if (leapYear) {
+            System.out.printf("%d год является високосным", year);
+        }
+        else System.out.printf("%d год не является високосным", year);
         System.out.println();
     }
 }
