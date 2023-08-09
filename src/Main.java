@@ -3,8 +3,8 @@ public class Main {
 
         task1 ();
         task2 ();
-        task3 ();/*
-        task4 ();
+        task3 ();
+        task4 ();/*
         task5 (); */
     }
     public static void task1 () {
@@ -46,7 +46,27 @@ public class Main {
         if (leapYear) {
             System.out.printf("%d год является високосным", year);
         }
-        else System.out.printf("%d год не является високосным", year);
+        else
+            System.out.printf("%d год не является високосным \n", year);
+    }
+    public static void task4 () {
+        System.out.println();
+        System.out.println("task 4");
+        int deliveryDistance = 95;
+        int deliveryTime = 1;
+
+        if (deliveryDistance < 20) {
+            System.out.printf("Потребуется дней: %d", deliveryTime);
+        }
+        else if ((deliveryDistance >= 20) && (deliveryDistance < 60)) {
+            deliveryTime = deliveryTime + 1;
+            System.out.printf("Потребуется дней: %d", deliveryTime);
+        }
+        else if ((deliveryDistance >= 60) && (deliveryDistance < 100)) {
+            deliveryTime = deliveryTime + 2;
+            System.out.printf("Потребуется дней: %d", deliveryTime);
+        }
+        else System.out.println("Доставки нет");
         System.out.println();
     }
 }
