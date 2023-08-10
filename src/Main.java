@@ -42,9 +42,10 @@ public class Main {
     public static void task3 () {
         System.out.println("task 3");
         int year = 2021;
-        Boolean leapYear = year % 4 == 0; // Если деление на 4 без остатка, то год високосный
+        Boolean leapYear = (year % 4 == 0) && (year % 100 != 0 ) || (year % 400 == 0); // определяем високосный год, как
+        // каждый четвертый и не каждый сотый, или каждый четырёхсотый.
         if (leapYear) {
-            System.out.printf("%d год является високосным", year);
+            System.out.printf("%d год является високосным \n", year);
         }
         else
             System.out.printf("%d год не является високосным \n", year);
